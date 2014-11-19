@@ -6,11 +6,11 @@
 red='\e[0;31m'
 nc='\e[0m'
 lblue='\e[1;34m'
-test ! -d /root/sda1/mlnx-driver-u1404-k3.13 && mkdir -p /root/sda1/mlnx-driver-u1404-k3.13/drivers
+test ! -d /root/sda1/work/mlnx-driver-u1404-k3.13 && mkdir -p /root/sda1/work/mlnx-driver-u1404-k3.13/drivers
 
 test ! -f map && find . -name *.ko |sort > map
 
-target=/root/sda1/mlnx-driver-u1404-k3.13/drivers
+target=/root/sda1/work/mlnx-driver-u1404-k3.13/drivers
 source=`pwd`
 
 while read line
